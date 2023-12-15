@@ -7,10 +7,10 @@ import java.util.List;
 
 public class HomePage extends BasePage {
     @InitComponent(css = "#header")
-    public MenuComponent menu;
+    private MenuComponent menu;
 
     @InitComponent(css= ".js-product-miniature")
-    public List<ProductMiniatureComponent> miniatures;
+    private List<ProductMiniatureComponent> miniatures;
 
     public HomePage(WebDriver driver) {
         super(driver);
